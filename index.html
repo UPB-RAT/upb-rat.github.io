@@ -2,9 +2,20 @@
 <html>
   <head>
     <meta http-equiv="refresh" content="0; url=/ieee-summer-school/" />
-    <!-- <script>
-      window.location.replace("/ieee-summer-school/");
-    </script> -->
+    <!-- Google Analytics (uses Vite env variable) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=%VITE_GOOGLE_ANALYTICS_ID%"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "%VITE_GOOGLE_ANALYTICS_ID%");
+    </script>
   </head>
   <body>
     Redirecting now ...
